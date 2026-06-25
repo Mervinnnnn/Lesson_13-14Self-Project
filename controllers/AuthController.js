@@ -85,6 +85,6 @@ export const logOutUser = (req,res) =>{
     })
 }
 
-export const chatPage = (req,res)=>{
-    res.render('chat/chat')
-}
+// export const chatPage = (req,res)=>{
+//     res.render('chat/chat')
+// }

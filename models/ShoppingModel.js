@@ -1,11 +1,11 @@
-import mongoose, { Mongoose } from "mongoose";
+import mongoose, { Mongoose, now } from "mongoose";
 
 const daftarBelanjaSchema = new mongoose.Schema({
     name :{
         type : String,
         required : true
     },
-    harga:{
+    price:{
         type : Number,
         required : true
     },
@@ -15,6 +15,7 @@ const daftarBelanjaSchema = new mongoose.Schema({
     },
     date:{
         type : Date,
+        default : now,
         required : true
     },
     status :{
